@@ -36,7 +36,7 @@ pip3 install -r requirements.txt
 
 ``` bash
 py -3.12 -m venv .venv
-.venv\Scripts\activate  
+source .venv/Scripts/activate
 ```
 
 ##### Install libraries
@@ -57,7 +57,18 @@ pip freeze > requirements.txt
 pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org -r requirements.txt   
 ```
 
+##### Upgrade pip
+``` bash
+python.exe -m pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org -r requirements.txt --upgrade pip
+```
+
+
 #### Environment Variables
+
+``` bash
+cd api_openai
+touch .env
+```
 
 add environment variables
 
@@ -67,8 +78,14 @@ add environment variables
 
 * openai_project=[__YourProjectID__]
 
-``` bash
-cd api_openai
-touch .env
-```
 
+### 1.1.2 Chatbot with OpenAi - Course
+
+##### Install dependencies
+
+``` bash
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org gradio
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org llama-index
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org langchain
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org ipykernel
+```

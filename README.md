@@ -1,11 +1,12 @@
-# EDTeam AI School 
+# 1.0 EDTeam AI School 
 
-## AI for programmers - Path
+## 1.1 AI for programmers - Path
 
-### Build APPs with OpenAI API - Course
+### 1.1.1 Build APPs with OpenAI API - Course
 
-##### Create and activate a virtual environment with Python
+#### Virtual Environment with MacOS
 
+##### Create and activate a virtual environment
 ``` bash
 python3.12 -m venv .venv
 source .venv/bin/activate    
@@ -29,4 +30,45 @@ pip3 freeze > requirements.txt
 pip3 install -r requirements.txt   
 ```
 
+#### Virtual Environment with Window
+
+##### Create and activate a virtual environment
+
+``` bash
+py -3.12 -m venv .venv
+.venv\Scripts\activate  
+```
+
+##### Install libraries
+
+``` bash
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org openai
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org python-dotenv   
+```
+##### Save dependencies
+
+``` bash
+pip freeze > requirements.txt  
+```
+
+##### Install dependencies
+
+``` bash
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org -r requirements.txt   
+```
+
+#### Environment Variables
+
+add environment variables
+
+* openai_api_edt=[__YourAPIKey__]
+
+* openai_organization=[__YourOrganizationID__]
+
+* openai_project=[__YourProjectID__]
+
+``` bash
+cd api_openai
+touch .env
+```
 

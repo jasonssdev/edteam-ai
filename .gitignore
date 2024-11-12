@@ -78,3 +78,4 @@ $RECYCLE.BIN/
 #jasonssdev user
 .venv
 .env
+chatbot/notebooks/.gradio/
